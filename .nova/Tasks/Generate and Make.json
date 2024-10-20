@@ -1,8 +1,19 @@
 {
   "actions" : {
     "build" : {
-      "enabled" : true,
-      "script" : "tree-sitter generate\nmake install"
+      "postActions" : [
+        {
+          "action" : "build",
+          "taskName" : "Generate",
+          "type" : "runTask"
+        },
+        {
+          "action" : "build",
+          "taskName" : "Make",
+          "type" : "runTask"
+        }
+      ],
+      "script" : "tree-sitter generate\n.\/compile_parser.sh .\/ \/Applications\/Nova.app"
     },
     "clean" : {
       "enabled" : true,

@@ -1,0 +1,9 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : ".\/compile_parser.sh .\/ \/Applications\/Nova.app"
+    }
+  },
+  "openLogOnRun" : "start"
+}

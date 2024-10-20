@@ -41,7 +41,7 @@
     "prebuildify": "^6.0.0"
   },
   "scripts": {
-    "test": "tree-sitter test && tree-sitter parse examples/*.xml --quiet --time",
+    "test": "tree-sitter test && tree-sitter parse examples/*.mxml --quiet --time",
     "test-windows": "tree-sitter test",
     "install": "node-gyp-build",
     "prebuildify": "prebuildify --napi --strip"
@@ -50,7 +50,7 @@
     {
       "scope": "text.mxml.basic",
       "file-types": [
-        "xml"
+        "mxml"
       ],
       "injection-regex": "mxml"
     }
