@@ -2,7 +2,9 @@
 
 An MXML grammar for Tree-sitter
 
-Copied from Panic's XML grammar and some HTML grammer.
+Copied from Panic's XML grammar and modified to build in Panic's Nova IDE
+
+---
 
 [tree-sitter-xml](https://github.com/panicinc/tree-sitter-xml)
 ================

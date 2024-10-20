@@ -1,6 +1,7 @@
 #include "tree_sitter/parser.h"
 
 #if defined(__GNUC__) || defined(__clang__)
+#pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wmissing-field-initializers"
 #endif
 
@@ -2232,12 +2233,10 @@ unsigned tree_sitter_xml_external_scanner_serialize(void *, char *);
 void tree_sitter_xml_external_scanner_deserialize(void *, const char *, unsigned);
 
 #ifdef _WIN32
-#define TS_PUBLIC __declspec(dllexport)
-#else
-#define TS_PUBLIC __attribute__((visibility("default")))
+#define extern __declspec(dllexport)
 #endif
 
-TS_PUBLIC const TSLanguage *tree_sitter_xml() {
+extern const TSLanguage *tree_sitter_xml(void) {
   static const TSLanguage language = {
     .version = LANGUAGE_VERSION,
     .symbol_count = SYMBOL_COUNT,

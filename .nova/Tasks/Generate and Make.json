@@ -1,0 +1,12 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "tree-sitter generate\nmake install"
+    },
+    "clean" : {
+      "enabled" : true,
+      "script" : "make clean"
+    }
+  }
+}
