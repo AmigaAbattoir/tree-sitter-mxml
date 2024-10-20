@@ -1,7 +1,7 @@
 {
-  "name": "tree-sitter-xml",
+  "name": "tree-sitter-mxml",
   "version": "0.1.0",
-  "description": "XML grammar for tree-sitter",
+  "description": "MXML grammar for tree-sitter",
   "main": "bindings/node",
   "types": "bindings/node",
   "keywords": [
@@ -18,9 +18,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/panicinc/tree-sitter-xml.git"
+    "url": "https://github.com/amigaabattoir/tree-sitter-mxml.git"
   },
   "authors": [
+    "Christopher Pollati <amigaabattoir@gmail.com>",
     "Logan Collins <logan@panic.com>"
   ],
   "license": "MIT",
@@ -47,11 +48,11 @@
   },
   "tree-sitter": [
     {
-      "scope": "text.xml.basic",
+      "scope": "text.mxml.basic",
       "file-types": [
         "xml"
       ],
-      "injection-regex": "xml"
+      "injection-regex": "mxml"
     }
   ]
 }

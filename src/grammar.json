@@ -1,5 +1,5 @@
 {
-  "name": "xml",
+  "name": "mxml",
   "rules": {
     "document": {
       "type": "REPEAT",

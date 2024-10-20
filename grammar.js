@@ -1,5 +1,6 @@
 /**
- * @file XML grammar for tree-sitter
+ * @file MXML grammar for tree-sitter
+ * @author Christopher Pollati
  * @author Logan Collins
  * @license MIT
  */
@@ -11,7 +12,7 @@
  // @ts-check
 
 module.exports = grammar({
-  name: 'xml',
+  name: 'mxml',
 
   extras: $ => [
     $.comment,

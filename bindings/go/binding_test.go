@@ -1,4 +1,4 @@
-package tree_sitter_xml_test
+package tree_sitter_mxml_test
 
 import (
 	"testing"
